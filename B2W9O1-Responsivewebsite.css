@@ -1,0 +1,19 @@
+@media screen and (max-width: 400) {
+    body{
+        font-family: 'Archivo', sans-serif;
+        color: blue;
+    }
+    .top{
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        background-color: yellow;
+        border: none;
+    }
+
+    .icons{
+        width: 1%;
+    }
+   
+}
+
