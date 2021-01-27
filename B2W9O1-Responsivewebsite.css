@@ -76,15 +76,19 @@
         font-family: 'Archivo', sans-serif;
         color: black;
         background-color: yellow;
-        display: inline-block;
-        width: 100%;
+        display: grid;
+        width: 99%;
     }
+
     html{
-        background-color: white;
+        background-color: whitesmoke;
     }
     .icons{
-        margin-top: 1em;
-        width: 5%;
+        width: 2%;
+    }
+
+    .texticons{
+        width: 13%;
     }
 
     div.menu{
@@ -93,10 +97,13 @@
         display: inline-block;
         width: 100%;
         background-color: gold;
+        text-align: right;
+        grid-column: 1/4;
     }
     #menubar{
         width: 2em;
         color: black;
+        float: left;
     }
 
     #menutext{
@@ -105,10 +112,28 @@
         bottom: 1em;
     }
 
-    .logo{
+    p.info{
+        margin-right: 3em;
+        display: inline;
+        font-size: 1.5em;
+    }
+
+    div.links{
+        margin-left: 2em;
         width: 100%;
         height: auto;
         float: left;
+        grid-column: 1/4;
+    }
+
+    a{
+        display: inline;
+        text-decoration: none;
+        color: goldenrod;
+        font-weight: bold;
+        margin-right: 2em;
+        position: relative;
+        bottom: 2em;
     }
 
     #logo{
@@ -120,21 +145,47 @@
         width: 100%;
         height: auto;
         justify-content: center;
+        grid-column: 1/4;
     }
 
     .divstyle{
         margin: 1em;
         width: 15em;
+        margin: 30 auto;
     }
+
     .button{
         width: 6em;
         font-size: 1em;
-        background-color: gold;
+        background-color: goldenrod;
         color: black;
         text-align: center;
+        border: 2px solid grey;
+        margin: 10 60;
     }
+
+    .drivelesson{
+        grid-column: 1/2;
+        background-color: gold;
+        padding: 1em;
+    }
+
+    .locations{
+        grid-column: 2/3;
+        background-color: gold;
+        padding: 1em;
+    }
+
+    .testlesson{
+        grid-column: 3/4;
+        background-color: gold;
+        padding: 1em;
+    }
+    
     .clip{
         text-align: center;
+        grid-column: 1/4;
+        margin-bottom: 1em;
     }
 
     #menubar{
