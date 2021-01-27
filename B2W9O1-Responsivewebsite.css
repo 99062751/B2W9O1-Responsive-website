@@ -4,15 +4,28 @@
         color: black;
         background-color: yellow;
         display: inline-block;
+        width: 100%;
     }
     html{
         background-color: white;
     }
-    .icons{
+    .icons2{
         margin-top: 1em;
         width: 5%;
     }
 
+    .texticons{
+        width: 2%;
+    }
+
+
+    .img{
+        display: none;
+    }
+
+    .info{
+        display: none;
+    }
     div.menu{
         position: sticky;
         top: 0;
@@ -36,13 +49,20 @@
 
     #menutext{
         margin: 0 auto;
-        position: relative;
-        bottom: 1em;
+    }
+
+    a{
+        display: block;
+        text-decoration: none;
+        color: goldenrod;
+        font-weight: bold;
+        background-color: black;
     }
 
     .header{
         background-color: yellow;
         color: white;
+        width: 100%;
     }
 
     .slide1{
