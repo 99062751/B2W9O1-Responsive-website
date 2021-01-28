@@ -15,12 +15,17 @@
     }
 
     .texticons{
-        width: 2%;
+        width: 6%;
     }
 
 
     .img{
-        display: none;
+        width: 5%;
+        display: inline-block;
+        margin-right: 1em;
+        position: relative;
+        bottom: 30;
+        left: 50;
     }
 
     .info{
@@ -32,31 +37,35 @@
         display: inline-block;
         width: 100%;
         background-color: gold;
+        height: 5%;
     }
-    .logo{
-       width: 100%;
-       height: auto;
+    #menutext.logo{
+        bottom: 2em;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+       
     }
-
     #logo{
-        width: 30%;
-        float: right;
+        display: none;
     }
     #menubar{
         width: 2em;
         color: black;
     }
 
-    #menutext{
-        margin: 0 auto;
-    }
 
-    a{
+
+    .links{
         display: block;
         text-decoration: none;
         color: goldenrod;
         font-weight: bold;
         background-color: black;
+        width: 40%;
+        margin-top: -1.8em;
+        margin-bottom: 1.8em;
     }
 
     .header{
@@ -82,13 +91,17 @@
         text-align: center;
     }
 
-
-
     .clip{
         width: 90%;
         height: auto;
         margin: 1em;
     }
+
+    footer{
+        text-align: center;
+        font-size: 1em;
+        width: 100%;
+   }
 }
 
 @media screen and (min-width: 800px) {
@@ -101,7 +114,7 @@
     }
 
     html{
-        background-color: whitesmoke;
+        background-color: goldenrod;
     }
     .icons{
         width: 2%;
@@ -120,16 +133,27 @@
         text-align: right;
         grid-column: 1/4;
     }
-    #menubar{
-        width: 2em;
-        color: black;
-        float: left;
+
+    div.logo#menutext{
+        width: 100%;
+        background-color: yellow;
+        text-align: left;
+        height: 5em;
     }
 
-    #menutext{
-        margin: 0 auto;
+
+    a.links{
         position: relative;
-        bottom: 1em;
+        bottom: 2em;
+    }
+
+    #logo{
+        margin-top: -1em;
+        width: 13%;
+        height: auto;
+    }
+    a:hover{
+        color: black;
     }
 
     p.info{
@@ -138,34 +162,19 @@
         font-size: 1.5em;
     }
 
-    div.links{
-        margin-left: 2em;
-        width: 100%;
-        height: auto;
-        float: left;
-        grid-column: 1/4;
-    }
-
     a{
         display: inline;
         text-decoration: none;
         color: goldenrod;
         font-weight: bold;
         margin-right: 2em;
-        position: relative;
-        bottom: 2em;
-    }
-
-    #logo{
-        width: 13%;
     }
 
     .header{
-        display: flex;
+        display: block;
         width: 100%;
-        height: auto;
-        justify-content: center;
         grid-column: 1/4;
+        float: right;
     }
 
     .divstyle{
@@ -211,5 +220,11 @@
     #menubar{
         width: 2em;
         color: black;
+   }
+
+   footer{
+        text-align: center;
+        font-size: 1.3em;
+        grid-column: 1/4;
    }
 }
