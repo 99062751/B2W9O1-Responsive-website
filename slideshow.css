@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: floralwhite;
+}
+
+
+
+.slider-frame{
+    overflow: hidden;
+    height: 400px;
+    width: 970px;
+    margin-left: 260px;
+    margin-top: 20px;
+}
+
+/* slide animation */
+/* -webkit- moet ertussen */
+
+@keyframes slide_animation{
+    0%{left:0px}
+    10%{left:0px}
+    20%{left:967px}
+    30%{left:966px}
+    40%{left:1930px}
+    50%{left:1930px}
+    60%{left:965px}
+    70%{left:965px}
+    80%{left:0px}
+    90%{left:0px}
+    100%{left:0px}
+}
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -1932px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 400px;
+    width: 970px;
+    position: relative;
+    float: left;
+}
+

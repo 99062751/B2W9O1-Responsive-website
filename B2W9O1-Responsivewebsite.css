@@ -1,14 +1,66 @@
 @media screen and (max-width: 600px) {
-    body{
+ 
+    html{
         font-family: 'Archivo', sans-serif;
         color: black;
         background-color: yellow;
         display: inline-block;
-        width: 100%;
     }
-    html{
-        background-color: white;
+ 
+    div.menu{
+        position: fixed;
+        top: 0;
+        display: inline-block;
+        width: 96%;
+        background-color: gold;
     }
+
+    #menutext.logo{
+        display: inline-block;
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    #menubar{
+        width: 2em;
+        color: black;
+    }
+    .row1{
+        display: none;
+    }
+    div.phonemenu{
+
+        display: inline-block;
+        background-color: gold;
+        width: 96%;
+        height: 6%;
+    }
+
+    #menubar2{
+        width: 2em;
+        color: black;
+        position: fixed;
+    }
+
+    #menutext2#logo{
+        bottom: 2em;
+        display: inline-block;
+    }
+    #logo{
+        width: 23%;
+        float: right;
+        margin-top: -0.5em;
+    }
+
+    .img{
+        width: 5%;
+        display: inline;
+    }
+
+    .info{
+        display: inline-block;
+    }
+
     .icons2{
         margin-top: 1em;
         width: 5%;
@@ -18,57 +70,16 @@
         width: 6%;
     }
 
-
-    .img{
-        width: 5%;
-        display: inline-block;
-        margin-right: 1em;
-        position: relative;
-        bottom: 30;
-        left: 50;
-    }
-
-    .info{
-        display: none;
-    }
-    div.menu{
-        position: sticky;
-        top: 0;
-        display: inline-block;
-        width: 100%;
-        background-color: gold;
-        height: 5%;
-    }
-    #menutext.logo{
-        bottom: 2em;
-        top: 0;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-       
-    }
-    #logo{
-        display: none;
-    }
-    #menubar{
-        width: 2em;
-        color: black;
-    }
-
-
-
     .links{
         display: block;
         text-decoration: none;
         color: goldenrod;
         font-weight: bold;
         background-color: black;
-        width: 40%;
-        margin-top: -1.8em;
-        margin-bottom: 1.8em;
     }
 
     .header{
+        margin-top: 2em;
         background-color: yellow;
         color: white;
         width: 100%;
@@ -82,6 +93,7 @@
 
     .divstyle{
         margin: 1em;
+        background-color: gold;
     }
     .button{
         width: 6em;
@@ -110,47 +122,52 @@
         color: black;
         background-color: yellow;
         display: grid;
+        grid-template-columns: auto auto auto;
         width: 99%;
     }
 
     html{
         background-color: goldenrod;
     }
-    .icons{
-        width: 2%;
-    }
-
-    .texticons{
-        width: 13%;
-    }
 
     div.menu{
+        display: inline-block;
         position: sticky;
         top: 0;
-        display: inline-block;
-        width: 100%;
-        background-color: gold;
+        background-color: yellow;
         text-align: right;
         grid-column: 1/4;
+        border: 2px solid blue;
+        height: 60%;
+    }   
+
+    .row1{
+        background-color: gold;
+        height: 30%;
+        margin-bottom: 14em;
     }
 
     div.logo#menutext{
-        width: 100%;
         background-color: yellow;
-        text-align: left;
-        height: 5em;
+        position: relative;
+        bottom: 170 ;
+        right: 0;
+        font-size: 1.4em;
     }
 
+    #menubar{
+        width: 2em;
+        color: black;
+   }
 
-    a.links{
-        position: relative;
-        bottom: 2em;
+    .phonemenu{
+        display: none;
     }
 
     #logo{
         margin-top: -1em;
         width: 13%;
-        height: auto;
+        float: left;
     }
     a:hover{
         color: black;
@@ -167,7 +184,7 @@
         text-decoration: none;
         color: goldenrod;
         font-weight: bold;
-        margin-right: 2em;
+        margin-right: 1em;
     }
 
     .header{
@@ -177,6 +194,21 @@
         float: right;
     }
 
+    .textH{
+        background-color: orange;
+        position: relative;
+        bottom: 120;
+        width: 55%;
+        left: 600;
+    }
+    .textP{
+        background-color: orange;
+        position: relative;
+        bottom: 80;
+        width: 62%;
+        left: 180;
+        height: 20%;
+    }
     .divstyle{
         margin: 1em;
         width: 15em;
@@ -211,20 +243,25 @@
         padding: 1em;
     }
     
+    .icons{
+        width: 2%;
+    }
+
+    .texticons{
+        width: 13%;
+    }
+
     .clip{
         text-align: center;
         grid-column: 1/4;
         margin-bottom: 1em;
     }
 
-    #menubar{
-        width: 2em;
-        color: black;
-   }
-
    footer{
         text-align: center;
         font-size: 1.3em;
         grid-column: 1/4;
    }
+
+    /*Slideshow css*/
 }
