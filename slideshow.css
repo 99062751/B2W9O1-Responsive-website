@@ -5,35 +5,35 @@ body{
 }
 
 
-
+/* Container waar de plaatjes worden laten zien (het frame) */
 .slider-frame{
     overflow: hidden;
-    height: 400px;
-    width: 970px;
-    margin-left: 260px;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
     margin-top: 20px;
 }
 
 /* slide animation */
-/* -webkit- moet ertussen */
 
 @keyframes slide_animation{
     0%{left:0px}
     10%{left:0px}
-    20%{left:967px}
-    30%{left:966px}
-    40%{left:1930px}
-    50%{left:1930px}
-    60%{left:965px}
-    70%{left:965px}
+    20%{left:1200px}
+    30%{left:1200px}
+    40%{left:2400px}
+    50%{left:2400px}
+    60%{left:1200px}
+    70%{left:1200px}
     80%{left:0px}
     90%{left:0px}
     100%{left:0px}
 }
+/* Container waar al de plaatjes inzitten */
 .slide-images{
     width: 3600px;
     height: 800px;
-    margin: 0 0 0 -1932px;
+    margin: 0 0 0 -2400px;
     position: relative;
     animation-name: slide_animation;
     animation-duration: 33s;
@@ -42,9 +42,10 @@ body{
     animation-play-state: running;
 }
 
+/* Waar de plaatjes inzitten */
 .img-container{
-    height: 400px;
-    width: 970px;
+    height: 800px;
+    width: 1200px;
     position: relative;
     float: left;
 }
